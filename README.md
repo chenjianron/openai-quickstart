@@ -166,3 +166,8 @@ Django Peng - pjt73651@email.com
 
 ### 执行命令：如果没有加参数 --target_language的话则是默认翻译为中文
 ```python ai_translator/main.py --model_type OpenAIModel --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo --target_language 日语```
+
+## homework3: langchain chanins
+
+### 1. 添加计算机，汉语言和生物的language_template
+### 2. 使用chain.invoke函数添加计算机，汉语言和生物的问题测试
