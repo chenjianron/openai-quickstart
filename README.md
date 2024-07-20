@@ -148,12 +148,21 @@ Django Peng - pjt73651@email.com
 
 ## homework1: GPT-4V的使用
 
-### 上传图片：将手写图片文件（命名为handwriting_2_homeword.jpg）上传到images文件夹中。
+### 1.上传图片：将手写图片文件（命名为handwriting_2_homeword.jpg）上传到images文件夹中。
 
-### 修改提示词：更改query_base64_image_description方法中的prompt参数，以便使用不同的描述性文字。
+### 2.修改提示词：更改query_base64_image_description方法中的prompt参数，以便使用不同的描述性文字。
 
-### 调用函数并输出内容：使用修改后的query_base64_image_description方法，并打印出返回的content。
+### 3.调用函数并输出内容：使用修改后的query_base64_image_description方法，并打印出返回的content。
 
-### 渲染Markdown内容：使用Jupyter的标准输出功能来渲染Markdown格式的内容。
+### 4. 渲染Markdown内容：使用Jupyter的标准输出功能来渲染Markdown格式的内容。
 
 
+## homework2: open-translator的使用
+
+### 为OpenAI设置api_key和base_url
+
+### 添加parse_argument(--target_language)以支持传递多种语种入参, 设置默认值是中文
+``` self.parser.add_argument('--target_language', type=str, default='zh-CN', help='Translate target_language. default: zh-CN') ```
+
+### 执行命令：如果没有加参数 --target_language的话则是默认翻译为中文
+```python ai_translator/main.py --model_type OpenAIModel --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo --target_language 日语```
