@@ -171,3 +171,15 @@ Django Peng - pjt73651@email.com
 
 ### 1. 添加计算机，汉语言和生物的language_template
 ### 2. 使用chain.invoke函数添加计算机，汉语言和生物的问题测试
+
+## homework4:sales chatbot
+
+### 4.1
+### 在openai-quickstart/langchain/sales_chatbot同级目录下新建一个car_sales_chatbot文件夹
+### 先用chatgpt4生成一份汽车销售指南的问答文档,里面有80条
+### 用/langchain/sales_chatbot 目录下的faiss.ipynb文件根据生成的问答文档生成 持久化存储 Faiss DB,包括index.faiss和index.pkl文件, 然后把这两个文件复制到 openai-quickstart/langchain/sales_chatbot/car_sales_chatbot 目录下的DB 文件夹
+### 复制 /langchain/sales_chatbot/ 目录下的 sales_chatbot.py 到openai-quickstart/langchain/sales_chatbot/car_sales_chatbot 目录下, 并重命名为car_sales_chatbot.py
+
+### 4.2
+### 添加一个 prompt来回答问题当向量数据库检索不到数据时
+### 创建了一个基于 GPT-4 模型的聊天机器人实例，配置了输入模板，并运行了一个处理链来生成针对客户问题的回复
